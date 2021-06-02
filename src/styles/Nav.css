@@ -1,0 +1,145 @@
+.nav-container{
+    height: 80px;
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+  }
+  
+  .nav{
+    width: 98%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .nav-logo{
+    text-decoration: none;
+  }
+  
+  .nav-container h5{
+    color : var(--darker-color);
+    font-size: 1.8em;
+    text-decoration: none;
+  }
+  
+  .content-nav ul{
+    display: flex;
+    list-style: none;
+    /* margin-right: 150px; */
+    width: 350px;
+    justify-content: space-around;
+  }
+  
+  .content-nav{
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-item{
+    color: var(--darker-color);
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+
+ul li{
+  height:30px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  cursor:pointer;
+}
+
+.dropdown{
+  position: absolute;
+  height: 170px;
+  width: 150px;
+  top:65px;
+  right:25px;
+  border-radius: 8px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  background-color:  var(--bg2-color);
+  display: none;
+  transition: all 0.3s ease;
+}
+
+.noclose{
+  display: none;
+  position: absolute;
+  height: 170px;
+  width: 110px;
+  top:0px;
+  right:25px;
+}
+
+.menu-nav-active .dropdown{
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.menu-nav-active .noclose{
+  display: block;
+}
+
+.dropdown ul{
+  display: flex;
+  flex-direction: column !important;
+  width: 100%;
+  height: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.dropdown ul li{
+  width: 100%;
+  height: 100%;
+  color:var(--darker-color);
+}
+
+.dropdown ul li:nth-child(2n){
+  border:solid 1px var(--pink-color);
+  border-left:none;
+  border-right:none;
+}
+
+.dropdown ul li:hover{
+  background-color: var(--pink-color);
+  color:white;
+}
+
+.dropdown ul li:hover > .nav-item{
+  color:white;
+}
+
+.dropdown ul li:hover:first-child{
+  border-radius: 8px 8px 0px 0px;
+}
+
+.dropdown ul li:hover:last-child{
+  border-radius: 0px 0px 8px 8px;
+}
+
+.theme-switcher{
+  padding:5px 5px 5px 5px;
+  border-radius: 50px;
+  transition:all 0.3s;
+}
+
+.theme-switcher:hover{
+  background-color: #f0f0f0;
+  transition:all 0.3s;
+}
+
+.theme-switcher:active{
+  background-color: #858585;
+  transition:all 0.3s;
+}
+
+.theme-light .lightTheme{
+  display: none;
+}
+
+.theme-dark .darkTheme{
+  display: none;
+}

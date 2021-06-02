@@ -1,0 +1,98 @@
+.meteo-search-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 220px;
+    align-items: center;
+}
+
+.form-meteo{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.input-meteo{
+    width: 20%;
+    padding:15px;
+    appearance: none;
+    background: none;
+    border:none;
+    outline:none;
+    background: #e4edff;
+    border-radius: 7px;
+    color:#313131;
+    font-size: 14px;
+    transition: 0.4 ease;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.submit-meteo{
+    width: 5%;
+    padding:15px;
+    margin-left:10px;
+    appearance: none;
+    background: none;
+    border:none;
+    outline:none;
+    background: var(--blue-color);
+    border-radius: 7px;
+    color:white;
+    font-weight: bold;
+    font-size: 14px;
+    transition: 0.4 ease;
+    cursor:pointer;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.results-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.temp{
+    font-size: 5em;
+    font-weight: 600;
+    color: var(--pink-color);
+}
+
+.location{
+    font-weight: 600;
+    font-size: 1.8em;
+}
+
+.weather p{
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 200    ;
+}
+
+.more-meteo-infos{
+    display: flex;
+    width: 400px;
+    justify-content: space-around;
+    margin-top: 40px;
+    background-color: var(--bg2-color);
+    padding:15px;
+    border-radius: 8px;
+}
+
+.more-meteo-infos .info{
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.info img{
+    margin:10px;
+}
+
+.info p{
+    font-size: 20px;
+}
