@@ -1,0 +1,44 @@
+.stage-container{
+    min-height: 100vh;
+}
+
+.stage-search-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 220px;
+    align-items: center;
+}
+
+.form-stage{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.input-stage{
+    background: #d5cdf5;
+}
+
+.submit-stage{
+    background: var(--purple-color);
+}
+
+.howWorks{
+    border:solid 1px var(--purple-color);
+    border-radius: 10px;
+    padding:20px;
+    text-align: left;
+    width: 50%;
+}
+
+.howWorks p{
+    margin : 10px 0px 10px 0px;
+}
+
+.howWorks-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

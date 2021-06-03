@@ -40,17 +40,18 @@ function Meteo() {
 
   
   return (
-    <div className="meteo-container">
+    <main>
+      <div className="meteo-container">
       <div className="meteo">
-        <div className="meteo-search-container">
+        <div className="meteo-search-container search-container">
           <input 
           type="text"
-          className="input-meteo"
+          className="input-meteo inputSearch"
           placeholder = "Recherchez une ville"
           onChange = {e => setQuery(e.target.value)} 
           value={query}
           />
-          <button className="submit-meteo" onClick={search}>Envoyer</button>
+          <button className="submit-meteo submitSearch" onClick={search}>Envoyer</button>
         </div>
         {(typeof weather.main != "undefined") ? (
       <div className="results-container">
@@ -79,6 +80,7 @@ function Meteo() {
       </div>
       <div className="toasts"></div>
     </div>
+    </main>
   );
 }
 

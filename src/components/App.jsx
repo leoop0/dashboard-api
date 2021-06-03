@@ -7,10 +7,11 @@ import Home from './Home.jsx'
 import Pokemon from './Pokemon.jsx'
 import Github from './Github.jsx'
 import Minecraft from './Minecraft.jsx'
+import Stage from './Stage.jsx'
 
 function App() {
   return (
-    <main>
+    <>
       <Router>
       <Switch>
           <Route path='/' exact />
@@ -24,10 +25,11 @@ function App() {
       <Route path='/pokemon' exact component = {Pokemon}/>
       <Route path='/github' exact component = {Github}/>
       <Route path='/minecraft' exact component = {Minecraft}/>
+      <Route path='/stage' exact component = {Stage}/>
       </div>
     </div>
     </Router>
-    </main>
+    </>
   );
 }
 

@@ -20,16 +20,17 @@ function Minecraft() {
       }
     }
   return (
-    <div className="minecraft-container">
-        <div className="minecraft-search-container">
+  <main>
+      <div className="minecraft-container">
+        <div className="minecraft-search-container search-container">
         <input 
         type="text"
         placeholder="Recherchez un joueur de Minecraft"
-        className="input-minecraft"
+        className="input-minecraft inputSearch"
         onChange = {e => setQuery(e.target.value)} 
         value={query}
         />
-        <button className="submit-minecraft" onClick={searchMinecraftPlayer}>Envoyer</button>
+        <button className="submit-minecraft submitSearch" onClick={searchMinecraftPlayer}>Envoyer</button>
         </div>
         {(typeof minecraftPlayer.src != "undefined") ? (
         <div className="minecraft-results">
@@ -37,6 +38,7 @@ function Minecraft() {
         </div>
         ) : ('')}
         </div>
+  </main>
   );
 }
 

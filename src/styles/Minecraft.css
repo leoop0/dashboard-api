@@ -1,11 +1,3 @@
-.minecraft-search-container{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    height: 220px;
-    align-items: center;
-}
-
 .form-minecraft{
     display: flex;
     width: 100%;

@@ -10,11 +10,13 @@ function Home() {
         "health",
         "notion",
         "pokemon",
+        "minecraft",
       ];
       
       var randomSlug = myArray[Math.floor(Math.random()*myArray.length)];
 
   return (
+    <main>
     <div className="home-container">
         <div className="texts-home-container">
         <h1>Bienvenue,</h1>
@@ -25,11 +27,14 @@ function Home() {
         <p>Vous pouvez retrouver mon site personnel <a href="https://leofrati.fr" target="blank">ici</a>.</p>
         </div>
         <Link to={randomSlug}><button>Découvrir une API au hasard</button></Link>
+        <p>Si vous êtes là pour consulter mon rapport de stage, c'est par ici !</p>
+        <Link to="/stage"><button className="btn-stage">Voir mon rapport de stage 👀</button></Link>
         </div>
         <div className="logo-home">
           <img src={logo} alt="" />
         </div>
     </div>
+    </main>
   );
 }
 

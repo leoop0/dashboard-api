@@ -11,6 +11,7 @@
     --green-color: #21D9C0;
     --blue-color: #7081FF;
     --pink-color: #ff3175;
+    --purple-color: #6E44FF;
     --red-color: rgba(255, 82, 82);
     --dark-color: #444C5C;
     --darker-color: #24282f;
@@ -26,4 +27,49 @@ main{
     min-height: 100vh;
     max-height: 100vh;
     background: var(--bg-color);
+}
+
+.search-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 220px;
+    align-items: center;
+}
+
+.form-minecraft{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.inputSearch{
+    width: 20%;
+    padding:15px;
+    appearance: none;
+    background: none;
+    border:none;
+    outline:none;
+    border-radius: 7px;
+    color:#313131;
+    font-size: 14px;
+    transition: 0.4 ease;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.submitSearch{
+    width: 5%;
+    padding:15px;
+    margin-left:10px;
+    appearance: none;
+    background: none;
+    border:none;
+    outline:none;
+    border-radius: 7px;
+    color:white;
+    font-weight: bold;
+    font-size: 14px;
+    transition: 0.4 ease;
+    cursor:pointer;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }

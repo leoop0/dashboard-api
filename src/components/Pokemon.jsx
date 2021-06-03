@@ -40,16 +40,17 @@ function Pokemon() {
   
   var artwork = "official-artowrk";
   return (
-    <div className="pokemon-container" id="test">
-        <div className="pokemon-search-container">
+   <main>
+      <div className="pokemon-container" id="test">
+        <div className="pokemon-search-container search-container">
         <input 
         type="text"
         placeholder="Recherchez un pokemon (en anglais)/numéro"
-        className="input-pokemon"
+        className="input-pokemon inputSearch"
         onChange = {e => setQuery(e.target.value)} 
         value={query}
         />
-        <button className="submit-pokemon" onClick={searchPokemon}>Envoyer</button>
+        <button className="submit-pokemon submitSearch" onClick={searchPokemon}>Envoyer</button>
         </div>
         {(typeof pokemon.abilities != "undefined") ? (
         <div className="pokemon-results">
@@ -75,6 +76,7 @@ function Pokemon() {
          ) : ('')}
          <div id="toasts"></div>
     </div>
+   </main>
   );
 }
 

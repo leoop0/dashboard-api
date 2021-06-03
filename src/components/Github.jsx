@@ -4,9 +4,11 @@ import '../styles/Github.css'
 function Github() {
 
   return (
-    <div className="github-container">
+    <main>
+      <div className="github-container">
         <h1>Github</h1>
     </div>
+    </main>
   );
 }
 
