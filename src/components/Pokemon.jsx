@@ -27,7 +27,6 @@ function Pokemon() {
   }
 
   const toasts = document.getElementById("toasts");
-  console.log(toasts);
   const notifTxt = "Le nom du Pokemon est incorrect.";
 
   function errorToast(){
@@ -38,7 +37,6 @@ function Pokemon() {
     setTimeout(() => notif.remove(), 5000);
   }
   
-  var artwork = "official-artowrk";
   return (
    <main>
       <div className="pokemon-container" id="test">
@@ -57,7 +55,7 @@ function Pokemon() {
           <p>{pokemon.species.name}</p>
           <p>N° Pokedex National : {pokemon.order}</p>
           <div className="artwork">
-            {/* <img src={pokemon.sprites.other.$(artwork).front_default} alt="" /> */}
+            {/* <img src={pokemon.sprites.other.official-artowrk.front_default} alt="" /> */}
           </div>
           <div className="sprites">
           <div className="pokemon-sprite pokeImg">

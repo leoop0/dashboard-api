@@ -1,13 +1,14 @@
-import React from 'react'
+import React from 'react';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import '../styles/App.css';
-import Nav from './Nav.jsx'
+import Nav from './Nav.jsx';
 import Meteo from './Meteo.jsx';
-import Home from './Home.jsx'
-import Pokemon from './Pokemon.jsx'
-import Github from './Github.jsx'
-import Minecraft from './Minecraft.jsx'
-import Stage from './Stage.jsx'
+import Home from './Home.jsx';
+import Pokemon from './Pokemon.jsx';
+import Github from './Github.jsx';
+import Minecraft from './Minecraft.jsx';
+import Stage from './Stage.jsx';
+import Shifumi from './Shifumi.jsx';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
       <Route path='/github' exact component = {Github}/>
       <Route path='/minecraft' exact component = {Minecraft}/>
       <Route path='/stage' exact component = {Stage}/>
+      <Route path='/shifumi' exact component = {Shifumi}/>
       </div>
     </div>
     </Router>

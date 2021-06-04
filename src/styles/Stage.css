@@ -29,7 +29,8 @@
     border-radius: 10px;
     padding:20px;
     text-align: left;
-    width: 50%;
+    max-width: 1100px;
+    min-width: 350px;
 }
 
 .howWorks p{

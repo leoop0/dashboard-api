@@ -22,6 +22,7 @@ function Home() {
         <h1>Bienvenue,</h1>
         <div className="desc-home-container">
         <p>Vous êtes ici sur ma plateforme de test de différentes API.</p>
+        <p>Vous pouvez aussi retrouver différents jeux réalisés en JavaScript</p>
         <p>Ce dashboard est réalisé avec <a href="https://fr.reactjs.org/" target="blank">React</a>.</p>
         <p>Cette App n'est pas responsive car elle n'a pas pour but d'être utilisée sur différents appareils.</p>
         <p>Vous pouvez retrouver mon site personnel <a href="https://leofrati.fr" target="blank">ici</a>.</p>

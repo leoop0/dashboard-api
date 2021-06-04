@@ -19,7 +19,8 @@ function Meteo() {
         setWeather(result);
         setQuery('');
         console.log(result);
-      });
+      })
+      .catch(error => errorToast());
     }
   }
 

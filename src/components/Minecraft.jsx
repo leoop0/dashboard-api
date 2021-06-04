@@ -5,20 +5,16 @@ const api = {
   }
 
 function Minecraft() {
+  let skinBox = document.querySelector("#boxSkin");
+  console.log(skinBox)
     const [query, setQuery] = useState('');
-    const [minecraftPlayer, setminecraftPlayer] = useState({});
   
-    const searchMinecraftPlayer = evt => {
-      if (evt.key = "Enter"){
-        fetch(`${api.base}${query.toLowerCase()}`)
-        .then(response => response.json())
-        .then(minecraftPlayer => {
-          setminecraftPlayer(minecraftPlayer);
-          setQuery('');
-          console.log(minecraftPlayer);
-        });
-      }
+    function searchMinecraftPlayer(){
+      let minecraftPlayer = api.base+query;
+      console.log(minecraftPlayer);
+      skinBox.innerHTML= "<div className='skin-result' style='border:solid 1px #21d9c0; border-radius: 10px; padding:20px; max-width: 500px; min-width: 350px;'>Vous pouvez retrouver votre skin ici : <a target='blank' href='"+ minecraftPlayer +"'> Click ! </a></div>"
     }
+
   return (
   <main>
       <div className="minecraft-container">
@@ -32,12 +28,13 @@ function Minecraft() {
         />
         <button className="submit-minecraft submitSearch" onClick={searchMinecraftPlayer}>Envoyer</button>
         </div>
-        {(typeof minecraftPlayer.src != "undefined") ? (
-        <div className="minecraft-results">
-            {minecraftPlayer}
+        <div className="return-skin" id="skin">
+        <div className="skin-box" id="boxSkin">
+
+</div>
         </div>
-        ) : ('')}
         </div>
+        <div id="toasts"></div>
   </main>
   );
 }

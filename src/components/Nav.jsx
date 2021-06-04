@@ -72,7 +72,7 @@ function Nav() {
                     <Link to="/minecraft" className="nav-item">Minecraft</Link>
                   </li>
                   <li>
-                    <Link className="nav-item">Test 3</Link>
+                    <Link to="/shifumi" className="nav-item">Shifumi</Link>
                   </li>
                 </ul>
               </div>
