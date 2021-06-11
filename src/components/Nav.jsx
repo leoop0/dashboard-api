@@ -1,86 +1,65 @@
-import React, { useState } from "react";
+import { Box, Heading, Spacer } from "@chakra-ui/layout";
+import { Button, color } from "@chakra-ui/react";
+import { useColorMode } from "@chakra-ui/color-mode";
+import { FiMoon, FiSun } from "react-icons/fi";
 import { Link } from "react-router-dom";
-import "../styles/Nav.css";
-import chevron from "../assets/chevron-down.svg";
-import sun from "../assets/sun.svg";
-import moon from "../assets/moon.svg";
+import {
+  Menu,
+  MenuButton,
+  MenuList,
+  MenuItem,
+  MenuItemOption,
+  MenuGroup,
+  MenuOptionGroup,
+  MenuIcon,
+  MenuCommand,
+  MenuDivider,
+} from "@chakra-ui/react";
+import { ChevronDownIcon } from "@chakra-ui/icons";
 
 function Nav() {
-  const [click, setClick] = useState(false);
-
-  const handleClick = () => setClick(!click);
-  const closeMenu = () => setClick(false);
-
-  const [theme, setTheme] = useState(false);
-
-  const handleTheme = () => setTheme(!theme);
-
+  const colorMode = useColorMode();
   return (
-    <div className="nav-container">
-      <div className="nav">
-        <div className="title-nav">
-          <Link to="/" className="nav-logo">
-            <h5>Dashboard API</h5>
+    <Box p={4} shadow="md" d="flex">
+      <Link to="/">
+        <Heading>Dashboard</Heading>
+      </Link>
+      <Spacer />
+      <Menu>
+        <MenuButton mr={4} as={Button} rightIcon={<ChevronDownIcon />}>
+          Actions
+        </MenuButton>
+        <MenuList>
+          <Link to="/pokemon">
+            <MenuItem>Pokemon</MenuItem>
           </Link>
-        </div>
-        <div className="content-nav">
-          <ul>
-            <li
-              onClick={handleTheme}
-              className={
-                theme
-                  ? "theme-switcher theme-dark"
-                  : "theme-switcher theme-light"
-              }
-            >
-              <img src={moon} alt="" className="darkTheme" />
-              <img src={sun} alt="" className="lightTheme" />
-            </li>
-            <li>
-              <Link to="/meteo" className="nav-item">
-                Meteo
-              </Link>
-            </li>
-            <li>
-              <Link to="/notion" className="nav-item">
-                Notion
-              </Link>
-            </li>
-            <li>
-              <Link to="/github" className="nav-item">
-                Github
-              </Link>
-            </li>
-            <li
-              onMouseEnter={handleClick}
-              className={
-                click ? "menu-nav-active nav-item" : "menu-nav nav-item"
-              }
-              onMouseLeave={closeMenu}
-            >
-              Autres
-              <img src={chevron} alt="" />
-              <div className="noclose"></div>
-              <div className="dropdown">
-                <ul>
-                  <li>
-                    <Link to="/pokemon" className="nav-item">
-                      Pokemon
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="/minecraft" className="nav-item">Minecraft</Link>
-                  </li>
-                  <li>
-                    <Link to="/shifumi" className="nav-item">Shifumi</Link>
-                  </li>
-                </ul>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
+          <Link to="/meteo">
+            <MenuItem>Meteo</MenuItem>
+          </Link>
+          <Link to="/minecraft">
+            <MenuItem>Minecraft</MenuItem>
+          </Link>
+          <Link to="/github">
+            <MenuItem>Github</MenuItem>
+          </Link>
+          <Link to="/stage">
+            <MenuItem>Stage</MenuItem>
+          </Link>
+        </MenuList>
+      </Menu>
+      <Button
+        leftIcon={colorMode.colorMode === "dark" ? <FiSun /> : <FiMoon />}
+        onClick={() => {
+          if (colorMode.colorMode == "dark") {
+            colorMode.setColorMode("light");
+          } else {
+            colorMode.setColorMode("dark");
+          }
+        }}
+      >
+        Dark Mode
+      </Button>
+    </Box>
   );
 }
 

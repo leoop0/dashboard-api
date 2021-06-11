@@ -1,53 +1,38 @@
-
-.form-pokemon{
-    display: flex;
-    width: 100%;
-    justify-content: center;
+.pokemon-results {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
 }
 
-.input-pokemon{
-    background: #f6c6d6;
+.pokemon-results img {
+  width: 100px;
+  height: auto;
 }
 
-.submit-pokemon{
-    background: var(--pink-color);
+.pokeImg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin: 20px;
 }
 
-.pokemon-results{
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    text-align: center;
-    flex-direction: column;
+.pokeImg p {
+  font-weight: bold;
 }
 
-.pokemon-results img{
-    width: 100px;
-    height: auto;
+.sprites {
+  display: flex;
+  width: 100%;
+  justify-content: center;
 }
 
-.pokeImg{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    margin:20px;
-}
-
-.pokeImg p{
-    font-weight: bold;
-}
-
-.sprites{
-    display: flex;
-    width: 100%;
-    justify-content: center;
-}
-
-.pokemon-results p:first-child{
-    font-weight: bold;
-    text-transform: capitalize;
-    font-size: 1.8em;
-    margin-bottom: 10px;
+.pokemon-results p:first-child {
+  font-weight: bold;
+  text-transform: capitalize;
+  font-size: 1.8em;
+  margin-bottom: 10px;
 }

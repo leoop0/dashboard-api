@@ -1,73 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 
-:root{
-    --green-color: #21D9C0;
-    --blue-color: #7081FF;
-    --pink-color: #ff3175;
-    --purple-color: #6E44FF;
-    --red-color: rgba(255, 82, 82);
-    --dark-color: #444C5C;
-    --darker-color: #24282f;
-    --bg-color : #f0f7ff ;
-    --bg2-color : #e6eef8 ;
-  }
-  
-body{
-    overflow: hidden;
-}
-
-main{
-    min-height: 100vh;
-    max-height: 100vh;
-    background: var(--bg-color);
-}
-
-.search-container{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    height: 220px;
-    align-items: center;
-}
-
-.form-minecraft{
-    display: flex;
-    width: 100%;
-    justify-content: center;
-}
-
-.inputSearch{
-    width: 330px;
-    padding:15px;
-    background: none;
-    border:none;
-    outline:none;
-    border-radius: 7px;
-    color:#313131;
-    font-size: 14px;
-    transition: 0.4 ease;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-}
-
-.submitSearch{
-    width: 90px;
-    padding:15px;
-    margin-left:10px;
-    background: none;
-    border:none;
-    outline:none;
-    border-radius: 7px;
-    color:white;
-    font-weight: bold;
-    font-size: 14px;
-    transition: 0.4 ease;
-    cursor:pointer;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+.search-container {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
 }

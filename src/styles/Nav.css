@@ -1,4 +1,4 @@
-.nav-container{
+/* .nav-container{
     height: 80px;
     min-height: 80px;
     display: flex;
@@ -26,7 +26,6 @@
   .content-nav ul{
     display: flex;
     list-style: none;
-    /* margin-right: 150px; */
     width: 350px;
     justify-content: space-around;
   }
@@ -142,4 +141,4 @@ ul li{
 
 .theme-dark .darkTheme{
   display: none;
-}
+} */

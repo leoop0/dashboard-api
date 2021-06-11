@@ -1,19 +1,10 @@
-.form-minecraft{
-    display: flex;
-    width: 100%;
-    justify-content: center;
+.submit-minecraft {
+  background: var(--green-color);
 }
 
-.input-minecraft{
-    background: #7bfae994;
-}
-
-.submit-minecraft{
-    background: var(--green-color);
-}
-
-.return-skin{
-    width: 100%;
-    display: flex;
-    justify-content: center;
+.return-skin {
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
