@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React, { useState } from "react";
 import "../styles/Pokemon.css";
 import "../styles/Toast.css";
@@ -905,7 +904,7 @@ function Pokemon() {
 }
 
 export default Pokemon;
-=======
+
 import React, { useState } from "react";
 import "../styles/Pokemon.css";
 import "../styles/Toast.css";
@@ -1812,4 +1811,3 @@ function Pokemon() {
 }
 
 export default Pokemon;
->>>>>>> 85adb06badaa1d6737ff414e403131d427267f83
