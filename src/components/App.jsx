@@ -9,6 +9,7 @@ import Github from "./Github.jsx";
 import Minecraft from "./Minecraft.jsx";
 import Stage from "./Stage.jsx";
 import { ChakraProvider } from "@chakra-ui/react";
+
 function App() {
   return (
     <>

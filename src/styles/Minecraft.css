@@ -8,3 +8,13 @@
   display: flex;
   justify-content: center;
 }
+
+.skinss {
+  font-weight: bold;
+}
+
+.warnMC {
+  font-size: 14px;
+  color: gray;
+  text-align: center;
+}

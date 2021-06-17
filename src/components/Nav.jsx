@@ -1,20 +1,9 @@
 import { Box, Heading, Spacer } from "@chakra-ui/layout";
-import { Button, color } from "@chakra-ui/react";
+import { Button, IconButton } from "@chakra-ui/react";
 import { useColorMode } from "@chakra-ui/color-mode";
 import { FiMoon, FiSun } from "react-icons/fi";
 import { Link } from "react-router-dom";
-import {
-  Menu,
-  MenuButton,
-  MenuList,
-  MenuItem,
-  MenuItemOption,
-  MenuGroup,
-  MenuOptionGroup,
-  MenuIcon,
-  MenuCommand,
-  MenuDivider,
-} from "@chakra-ui/react";
+import { Menu, MenuButton, MenuList, MenuItem } from "@chakra-ui/react";
 import { ChevronDownIcon } from "@chakra-ui/icons";
 
 function Nav() {
@@ -27,7 +16,7 @@ function Nav() {
       <Spacer />
       <Menu>
         <MenuButton mr={4} as={Button} rightIcon={<ChevronDownIcon />}>
-          Actions
+          Exp
         </MenuButton>
         <MenuList>
           <Link to="/pokemon">
@@ -42,23 +31,21 @@ function Nav() {
           <Link to="/github">
             <MenuItem>Github</MenuItem>
           </Link>
-          <Link to="/stage">
+          {/* <Link to="/stage">
             <MenuItem>Stage</MenuItem>
-          </Link>
+          </Link> */}
         </MenuList>
       </Menu>
-      <Button
-        leftIcon={colorMode.colorMode === "dark" ? <FiSun /> : <FiMoon />}
+      <IconButton
+        icon={colorMode.colorMode === "dark" ? <FiSun /> : <FiMoon />}
         onClick={() => {
-          if (colorMode.colorMode == "dark") {
+          if (colorMode.colorMode === "dark") {
             colorMode.setColorMode("light");
           } else {
             colorMode.setColorMode("dark");
           }
         }}
-      >
-        Dark Mode
-      </Button>
+      ></IconButton>
     </Box>
   );
 }

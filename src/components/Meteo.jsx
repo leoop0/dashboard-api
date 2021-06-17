@@ -3,7 +3,7 @@ import "../styles/Meteo.css";
 import moisture from "../assets/moisture.svg";
 import wind from "../assets/wind.svg";
 import { Heading, Input } from "@chakra-ui/react";
-import { Button, color } from "@chakra-ui/react";
+import { Button } from "@chakra-ui/react";
 const api = {
   key: "ae2f1f3bfbf77947dcc7eaca3e0ddf3e",
   base: "https://api.openweathermap.org/data/2.5/",

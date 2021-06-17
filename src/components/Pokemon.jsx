@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import "../styles/Pokemon.css";
 import "../styles/Toast.css";
 import { Heading, Input } from "@chakra-ui/react";
-import { Button, color } from "@chakra-ui/react";
+import { Button } from "@chakra-ui/react";
+import { useToast } from "@chakra-ui/react";
 const api = {
   base: "https://pokeapi.co/api/v2/pokemon/",
 };
@@ -836,11 +837,14 @@ function Pokemon() {
     }
   };
 
-  const toasts = document.getElementById("toasts");
-  const notifTxt = "Le nom du Pokemon est incorrect.";
-
+  const toast = useToast();
   function errorToast() {
-    alert("pas bon");
+    toast({
+      title: `Pokemon non trouvé !`,
+      status: "error",
+      isClosable: true,
+      position: "bottom-right",
+    });
   }
 
   return (
@@ -856,6 +860,7 @@ function Pokemon() {
             size="md"
             w="450px"
             list="pokemons"
+            variant="filled"
           />
           <datalist id="pokemons">
             {pokemons.map((item, index) => {
